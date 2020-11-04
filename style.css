@@ -1,0 +1,409 @@
+body{
+    background-color: antiquewhite;
+    color: black;
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    line-height: 1.2;
+    font-weight: italic;
+}
+
+html{
+    color:black;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.container{
+    width: 96%;
+    margin: auto;
+    overflow: hidden;
+    
+    
+
+}
+
+.btn1{
+   
+    background-color: black;
+    color: white;
+    border: 0;
+    text-decoration: none;
+    padding: 0.6rem 1.2rem;
+}
+a{
+    text-decoration: none;
+}
+
+ 
+
+img{
+   max-width: 100%;
+}
+
+header{
+    background-color: cornflowerblue;
+    padding-bottom: 2px;
+    border-bottom: 2px solid coral;
+    position: fixed;
+    width: 100%;
+    
+
+    
+}
+
+header a{
+    text-decoration: none;
+    padding-left: 10px;
+    font-size: 22px;
+    font-weight: bolder;
+    text-transform: uppercase;
+}
+
+ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+header li{
+    float: left;
+    padding-left: 30px;
+
+}
+
+header #brand{
+    float: left;
+    font-size: 22px;
+    margin-left: 28px;
+}
+
+header nav{
+    float: right;
+    margin-top: 39px;
+    margin-right: 40px;
+}
+
+header .current a{
+    color: red;
+}
+
+header a:hover{
+    color:white;
+}
+.showcase{
+    background-image: url('./b1.jpeg');
+    background-position: center;
+    background-size: cover;
+    min-height: 555px;
+    text-align: center;
+    
+   
+
+}
+
+.showcase h1{
+    font-size: 3rem;
+    margin-bottom: 0;
+    margin-top: 220px;
+}
+
+.showcase p{
+    font-size: 1.2rem;
+    margin-top: 10px;
+}
+
+.newsletter{
+    background-color: cornflowerblue;
+    padding-bottom: 10px;
+}
+
+.newsletter h1{
+    float: left;
+    font-size: 2rem;
+    margin-left: 65px;
+}
+
+.newsletter form{
+    float: right;
+    margin-top: 32px;
+    margin-right: 55px;
+}
+
+.newsletter input[type="email"]{
+    width: 300px;
+    height: 32px;
+}
+
+.btn{
+    background-color: rgb(255, 5, 5);
+    text-decoration: none;
+    font-size: 19px;
+    padding-bottom: 6px;
+    text-align: center;
+    padding-top:2.5px;
+    
+}
+
+.btn a{
+    color: black;
+}
+
+.btn:hover{
+    background-color: wheat;
+}
+
+.boxes{
+    display: grid;
+    grid-gap: 12px;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+.box{
+    background-color: #ccc;
+    color: black;
+    text-align: center;
+    padding: 3.4rem 1rem;
+    margin: 0 1px;
+    
+}
+
+.top-container{
+    display: grid;
+    grid-gap: 10px;
+    grid-template-areas: 
+    'showcase1 showcase1 top-box-a'
+    'showcase1 showcase1 top-box-b'
+}
+
+.showcase1{
+    grid-area: showcase1;
+    min-height: 400px;
+    background-image: url('./b2.jpeg');
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    padding: 3rem;
+    align-items: start;
+    justify-content: center;
+    
+}
+
+.showcase1 h1{
+    font-size: 3.5rem;
+    margin-bottom: 0;
+    color: black;
+}
+
+.showcase p{
+    font-size: 1.3rem;
+    margin-top: 0;
+    color: black;
+}
+
+.top-box{
+    display: grid;
+    background-color: indianred;
+    padding: 3rem 1rem;
+    align-items: center;
+    justify-items: center;
+    grid-gap: none;
+}
+
+.top-box .price{
+    font-size: 38px;
+}
+
+.top-box top-box-a{
+    grid-area: top-box-a;
+}
+.top-box top-box-b{
+    grid-area: top-box-b;
+}
+
+.info{
+    display: grid;
+    grid-gap: 35px;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    background-color: #ddd;
+    padding: 2rem;
+    
+}
+
+.info p{
+    font-size: 19px;
+    margin-left: 15px;
+}
+
+
+
+.info h2{
+    text-align: center;
+}
+
+.info .btn1{
+    margin-left: 215px;
+    padding:0 10px;
+    font-size: 20px;
+    
+}
+
+.info div{
+    margin-top: 47px;
+}
+.footer1{
+    background-color: black;
+    color: wheat;
+    padding: 0.6rem 2rem;
+    text-align: center;
+    margin-top: -10px;
+    
+}
+
+@media (max-width: 768px){
+    header #brand,
+    header nav li,
+     header nav{  
+        float: none;
+        width: 100%;
+        text-align: center;
+        display: inline;
+        padding: 0;
+        
+        
+    }
+
+    
+
+    .newsletter h1,
+    .newsletter form{
+        float: none;
+        text-align: center;
+        width: 100%;
+    }
+
+    .newsletter h1{
+        font-size: 25px;
+        margin-left: 0;
+    }
+
+    .newsletter input[type="email"]{  
+        display: block;
+        width: 100%;
+        margin-top: 0px;
+    }
+
+    .newsletter .btn{
+        display: block;
+        width: 100%;
+    }
+
+    .boxes{
+        grid-template-columns: 1fr;
+    }
+
+    header nav a{
+        font-size:17px;
+    }
+    header #brand{
+        font-size: 20px;
+        
+        
+    }
+
+    .container{
+        width: 98%;
+    }
+
+    .showcase h1{
+        font-size: 38px;
+        margin-top: 250px;
+
+    }
+
+    .showcase p{
+        margin-top: 20px;
+        font-size: 27px;
+    }
+
+    .top-container{
+        grid-template-areas:
+        'showcase1 showcase1'
+        'top-box-a top-box-b';
+    }
+
+   
+
+     .info{
+         grid-template-columns: 1fr;
+         grid-gap: 0px;
+     }
+
+     .info .btn1{
+         margin-left: 80px;
+        
+         
+     }
+
+     .showcase1 h1{
+         font-size: 40px;
+     }
+
+     @media (max-width: 400px){
+        .top-container{ 
+        grid-template-areas:
+         'showcase1'
+         'top-box-a'
+         'top-box-b'  }
+
+
+
+     }
+
+
+
+
+
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
